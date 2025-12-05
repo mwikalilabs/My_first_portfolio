@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url("Dowins.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+}
+
+/* navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+   margin-top: 200px;
+   
+
+}
+/* navbar links */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+ul li a {
+    display: block;
+  background-color: #ea37f0;
+    color: #fff6ff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* navbar hover */
+ul li a:hover {
+  background-color: #ffffff;
+  color: #ea37f0 ;
+  cursor: pointer;
+}
+
+/* brand name */
+.name {
+  justify-content: left;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+  left: 30px;
+top: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ea37f0;
+  margin-top: 10px;
+}
+/* 
+Style button */
+#button {
+  background-color: #ea37f0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 150px;
+  font-weight: bold;
+
+}
+/* button hover */
+#button:hover {
+  background-color: #ffffff;
+  color: #ea37f0 ;
+ font-weight: bolder;
+   font-size: 20px;
+}
+
+/* intro */
+.intro{
+    text-align: center;
+        margin-top: 200px;
+
+}
+
+/* avatar image */
+img {
+  
+width: 170px;
+height: 170px;
+object-fit: cover;
+    border-radius: 50%;
+
+}
+/* intro text */
+.me {
+    color: #ffffff;
+}
+
