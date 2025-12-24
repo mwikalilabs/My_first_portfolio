@@ -17,16 +17,17 @@
   <li><a href="#Home">Home</a></li>
   <li><a href="#About">About</a></li>
   <li><a href="#Services">Services</a></li>
-  <li><a href="#Resume">Resume</a></li>
-    <li><a href="#Portfolio">Portfolio</a></li>
-    <li><a href="#Blog">Blog</a></li>
-    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#contact">Contact</a></li>
 
 </ul>   
 
 </div>
-<button id="button">
-    Contact Me</button>
+<a href="#contact">
+<button id="button" >
+  Contact Me
+</button>
+</a>
+
     <div id="Home">
 
     
@@ -122,8 +123,10 @@ My name is Sharon Mwikali, a passionate graphic and web designer with a knack fo
                 </div>
 
             </div>
-
-            <button class="cv-btn">Download CV</button>
+<a href="path-to-your-file/Sharon_Mwikali_CV.pdf" download="Sharon_Mwikali_CV">
+    <button class="cv-btn">Download CV</button>
+</a>
+            <!-- <button class="cv-btn">Download CV</button> -->
 
         </div>
 
@@ -189,13 +192,33 @@ My name is Sharon Mwikali, a passionate graphic and web designer with a knack fo
 
 </div>
 </section>
-<section>
-<!-- Resume Section -->
-<section id="Resume">
-  <h2>My Resume</h2>
-  <p>Resume content goes here...</p>    
-  <a href="cv-btn">Download CV</a>
+<!-- Contact Me Section -->
+ <section id="contact">
+  <div class="container">
+  <form action="action_page.php">
 
-</section>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Kenya</option>
+      <option value="canada">Uganda</option>
+      <option value="usa">Tanzania</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+ </section>
+
+
 </body>
 </html>
