@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
+
 .Homepage {
     background-image: url("Dowins.jpg");
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: darken;
     background-size: cover;
-    /* /* background-attachment: fixed; */
     min-height: 100vh; 
 }
 
@@ -18,49 +19,37 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
   position: relative;
-   margin-top: 10px;
+  margin-top: 10px;
+}
 
-}
-/* navbar links */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
 ul li a {
     display: block;
-  background-color: #ea37f0;
+    background-color: #ea37f0;
     color: #fff6ff;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 16px;
 }
-/* navbar hover */
+
 ul li a:hover {
   background-color: #ffffff;
-  color: #ea37f0 ;
+  color: #ea37f0;
   cursor: pointer;
 }
 
-/* brand name */
 .name {
-  justify-content: left;
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
+  position: absolute;
   left: 30px;
-top: 0px;
+  top: 0px;
   font-size: 24px;
   font-weight: bold;
   color: #ea37f0;
   margin-top: 10px;
 }
-/* 
-Style button */
+
 #button {
   background-color: #ea37f0;
   color: white;
@@ -72,92 +61,42 @@ Style button */
   top: 15px;
   right: 150px;
   font-weight: bold;
-
 }
-/* button hover */
+
 #button:hover {
   background-color: #ffffff;
-  color: #ea37f0 ;
- font-weight: bolder;
-   font-size: 15px;
+  color: #ea37f0;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
-/* intro */
-.intro{
+.intro {
     text-align: center;
-        margin-top: 200px;
-
+    margin-top: 200px;
+    padding: 20px;
 }
 
-/* avatar image */
 img {
-  
-width: 170px;
-height: 170px;
-object-fit: cover;
-    border-radius: 50%;
-
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-/* intro text */
+
 .me {
     color: #ffffff;
+    font-size: 18px;
 }
-/* About me section */ 
 
-/*
- .about-img {
-    width: 500px;
-    height:auto;
-    object-fit: cover;
-    border-radius: 6px;
-    /* display: block;
-    margin: 0 auto;
-    margin-top: 20px; 
-}
-h3{
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-h2{
-  font-size: 36px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-.My-info{
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 1.6;
-}
-.info-box {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #ea37f0;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
-.info-box p {
-  margin: 5px 0;
-  font-size: 16px;
-}
-.left, .right {
-width: 48%;
-}
-*/
-
-/* ABOUT ME SECTION FIX */
 .Aboutme {
-    background: #1b1f36;   /* dark background */
-    padding: 80px 0;
+    background: #1b1f36;
+    padding: 80px 20px;
     color: white;
 }
 
 .about-container {
-    width: 85%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: flex-start;
@@ -166,17 +105,17 @@ width: 48%;
 }
 
 .about-img {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 6px;
 }
 
 .about {
     flex: 1;
-    max-width: 600px;
+    min-width: 280px;
 }
 
-/* Info box styling */
 .info-box {
     background: transparent;
     border: 1px solid #ea37f0;
@@ -185,10 +124,12 @@ width: 48%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .left, .right {
-    width: 48%;
+    flex: 1;
+    min-width: 200px;
 }
 
 .cv-btn {
@@ -200,20 +141,20 @@ width: 48%;
     cursor: pointer;
     margin-top: 20px;
 }
+
 .cv-btn:hover {
     background: #ffffff;
     color: #ea37f0;
 }
 
-/* images */
-  div.gallery {
+div.gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  padding-left: 80px;
+  justify-content: center;
+  padding: 20px;
   background: #1b1f36;
   color: #ffffff;
-  justify-content: center;
+  gap: 10px;
 }
 
 div.gallery-item {
@@ -235,28 +176,30 @@ div.gallery-item div.desc {
   padding: 15px;
   text-align: center;
 }
-h2{
+
+h2 {
   color: #ffffff;
   background-color: #ea37f0;
-padding: 5px;
-justify-content: center;
+  padding: 5px;
+  margin: 20px 0;
 }
 
-/* contact me */
-/* Style inputs with type="text", select elements and textareas */
+h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -266,14 +209,109 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .name {
+    font-size: 18px;
+    left: 15px;
+  }
+  
+  #button {
+    right: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  ul li a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .intro {
+    margin-top: 100px;
+  }
+  
+  .about-container {
+    gap: 20px;
+  }
+  
+  div.gallery {
+    padding: 15px;
+  }
+  
+  div.gallery-item {
+    width: 150px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .name {
+    font-size: 16px;
+    position: static;
+    margin-bottom: 10px;
+  }
+  
+  #button {
+    position: static;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  ul li a {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .intro {
+    margin-top: 50px;
+  }
+  
+  img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .about-container {
+    width: 95%;
+    gap: 15px;
+  }
+  
+  .about-img {
+    max-width: 100%;
+  }
+  
+  .left, .right {
+    width: 100%;
+  }
+  
+  div.gallery-item {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .container {
+    padding: 15px;
+  }
 }
